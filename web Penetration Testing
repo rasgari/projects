@@ -37,4 +37,4 @@ vulnerability === broken authentication , broken access control
 
 flag: secure, httponly:true ,
 
-session => XSS => /cookie
+session => XSS => /cookie ==>> cookie hijacking
