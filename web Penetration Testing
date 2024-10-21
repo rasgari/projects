@@ -23,34 +23,35 @@ Web Penetration Testing:
 url ها بررسی کنید
 در قسمت سرچ چه ورودی نمایش داده میشه
 
-RECON ===>>>
+===>>> RECON ===>>>
 
 دستور curl domain -I -k شمای کلی از سایت را نشان میده
 
-server , x-powered , set- cookie , secure , httponly , samesite , 
+server , x-powered , set-cookie , secure , httponly , samesite , location
 
-secure ==>> true , false
-samesite ==>> strict , lax , none  ======>>>>CSRF
-httponly ==>> true , false
+===>>> secure ===>>> true , false
+===>>> samesite ===>>> strict , lax , none  ======>>>>CSRF
+===>>> httponly ===>>> true , false
 
---- search => XSS (reflected) ---
---- comment 
+===>>> search ===>>> XSS (reflected) ---
+===>>> comment ===>>>
          => XSS (stored)
          => change owner (IDOR)
         
---- authentication:
+===>>> authentication:
               =>signup
               =>login
 
-vulnerability === broken authentication , broken access control
+ --- vulnerability === broken authentication , broken access control
 
 flag: secure, httponly:true ,
 
-session => XSS => /cookie ==>> cookie hijacking
+===>>> session => XSS => /cookie ==>> cookie hijacking
 
 
-CSRF 
-    =>authentication
-    =>state change ( email - mobile - password )
-    =>simple request ( get - post )
+===>>> CSRF ===>>>
+    => authentication
+    => state change ( email - mobile - password )
+    => simple request ( get - post - head )
+    => request repeatable 
 
