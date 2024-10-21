@@ -24,6 +24,8 @@ url ها بررسی کنید
 در قسمت سرچ چه ورودی نمایش داده میشه
 
 
+دستور curl domain -I -k شمای کلی از سایت را نشان میده
+
 search => XSS (reflected)
 comment 
          => XSS (stored)
