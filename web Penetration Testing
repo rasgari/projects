@@ -26,7 +26,11 @@ url ها بررسی کنید
 
 دستور curl domain -I -k شمای کلی از سایت را نشان میده
 
-server , x-powered , set- cookie , secure , httponly 
+server , x-powered , set- cookie , secure , httponly , samesite , 
+
+secure ==>> true , false
+samesite ==>> strict , lax , none
+httponly ==>> true , false
 
 search => XSS (reflected)
 comment 
