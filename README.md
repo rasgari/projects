@@ -14,3 +14,5 @@
 - dirsearch
 - wpscan
 - nuclei's
+- nikto
+- wapplayzer
