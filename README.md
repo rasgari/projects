@@ -1,1 +1,10 @@
 # projects
+
+
+shodan
+amass
+portscan
+nmap
+sublist3r
+assetfinder
+gau
