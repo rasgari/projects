@@ -55,3 +55,6 @@ flag: secure, httponly:true ,
     => simple request ( get - post - head )
     => request repeatable 
 
+
+penetester : check list
+hunter : creativity
