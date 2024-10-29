@@ -12,4 +12,5 @@
 - fuzzing
 - gobuster
 - dirsearch
-- 
+- wpscan
+- nuclei's
