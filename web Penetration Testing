@@ -58,3 +58,15 @@ flag: secure, httponly:true ,
 
 penetester : check list
 hunter : creativity
+
+============================================================================
+
+===>>>cash poisoning
+
+===>>>SSRF       
+    =>normal
+    =>blind  ( true , false )
+
+===>>>cloud hacking
+
+
