@@ -87,6 +87,46 @@ hunter : creativity
 
 ===>>>IDOR
 
+===>>>access control
+
+===>>>mass a signment
+
+
+===>>>JWT
+
+===>>>SQL injection
+    =>blind
+    =>time base
+    =>boolean base
+
+
+===>>>XSS
+    =>DOM
+    =>STORE=blind
+    =>REFLECTED=blind
+
+
+===>>>server side XSS
+
+===>>>XXE
+
+===>>>smalling
+
+
+===>>>authentication
+    =>forget password
+    =>register
+    =>login
+
+
+===>>>LFI
+
+
+===>>>broken authentication
+
+
+===>>>dependence authentication
+
 
 
 
