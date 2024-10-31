@@ -70,3 +70,23 @@ hunter : creativity
 ===>>>cloud hacking
 
 
+===>>>open redirect 
+کاربر به جایی که خودمون میخوایم انتقال بدیم
+
+    >>>>> XSS OR SSRF OR PHISHING
+
+===>>>account take over
+
+===>>>upload shell
+    >>>>> XSS OR RCE
+
+===>>>authentication
+
+===>>>broken access control
+سطح دسترسی تغییر بدیم
+
+===>>>IDOR
+
+
+
+
