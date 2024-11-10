@@ -25,6 +25,9 @@ url ها بررسی کنید
 
 ===>>> RECON ===>>>
 
+
+https://archive.org/
+
 دستور curl domain -I -k شمای کلی از سایت را نشان میده
 
 server , x-powered , set-cookie , secure , httponly , samesite , location
