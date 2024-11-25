@@ -32,6 +32,7 @@ https://archive.org/
 ===>>> http:// دستور curl domain -I  
 ===>>> https:// دستور curl domain -I -k 
 
+هدر مهم های سایت :
 server , x-powered , set-cookie , secure , httponly , samesite , location
 
 ===>>> secure ===>>> true , false
