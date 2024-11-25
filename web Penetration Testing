@@ -28,7 +28,9 @@ url ها بررسی کنید
 
 https://archive.org/
 
-دستور curl domain -I -k شمای کلی از سایت را نشان میده
+
+===>>> http:// دستور curl domain -I  
+===>>> https:// دستور curl domain -I -k 
 
 server , x-powered , set-cookie , secure , httponly , samesite , location
 
