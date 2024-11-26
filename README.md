@@ -16,3 +16,4 @@
 - nuclei's
 - nikto
 - wapplayzer
+- wordlist ===>>> https://github.com/danielmiessler/SecLists
