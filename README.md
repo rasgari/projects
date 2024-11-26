@@ -8,7 +8,7 @@
 - sublist3r
 - assetfinder
 - gau
-- FUFF
+- FUFF ===>>> https://github.com/ffuf/ffuf
 - fuzzing
 - gobuster
 - dirsearch
