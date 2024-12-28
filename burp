@@ -1,0 +1,16 @@
+burp :
+
+install ===>>> java version
+        ===>>> burp suite
+
+
+CA & foxyproxy ===>>> http://burp
+
+scope ===>>> scan-aduit
+      ===>>> vulnerability ( misconfiguration - xss - sql injection )
+
+
+new live task ===>>> extention
+
+
+scan ===>>> 
