@@ -33,7 +33,10 @@ FUZZ tools:
 
 
 https://archive.org/
+https://securityheaders.com/
+https://www.shodan.io/
 
+=============================================================================
 
 ===>>> http:// دستور curl domain -I  
 ===>>> https:// دستور curl domain -I -k 
