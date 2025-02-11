@@ -12,6 +12,9 @@ scope ===>>> scan-aduit
 
 new live task ===>>> extention
 
+sitemap ===>>>
+        ===>>> filter: 1xx, 2xx, 3xx, 4xx, 5xx  ===>>> enable
+
 
 scan ===>>> 
 
