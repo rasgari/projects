@@ -64,7 +64,19 @@ insecure deserialization ===>>>  ناامن آبجکت در وب اپلیکیش�
 
 http request smuggling ===>>>
 
-uploader ===>>>
+uploader ===>>> به فایل هایی که آپلود میشه دسترسی داریم
+
+open redirection ===>>> تبدیل به xss میشه
+
+basic authentication ===>>> کنترل دسترسی روی فایل ===>>> header & cookie
+
+client-side hash ===>>>
+
+command injection ===>>> تابع دستور سیستم عامل بشه
+
+XXE ===>>> config ===>>> variable ===>>> SSRF
+
+hash & encreption ===>>> 
 11---uploader
 
 12--- xss
