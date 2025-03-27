@@ -11,7 +11,8 @@ command:
 6 - sudo passwd root  ===>>> default : toor  ===>>> complex : Aa@#1 ===>> 8 charcter
 7 - sudo adduser name ===>>> limited
 8 - sudo apt install tilix ===>>> multi terminal
-9 - sudo apt install -y torbrowser-launcher ===>>> torbrowser-launcher
+9 - sudo apt install -y torbrowser-launcher ===>>> torbrowser-launcher 
+https://github.com/TheTorProject/gettorbrowser.git
 
 
 =================================================================
