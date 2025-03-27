@@ -3,12 +3,12 @@ kali linux:
 
 command:
 
-sudo apt update
-sudo apt upgrade
-sudo apt dist-upgrade
-sudo apt install git
-git clone https://github.com/sherlock-project/sherlock.git
-
+1 - sudo apt update
+2 - sudo apt upgrade
+3 - sudo apt dist-upgrade
+4 - sudo apt install git
+5 - git clone https://github.com/sherlock-project/sherlock.git
+6 - sudo passwd root
 
 
 =================================================================
