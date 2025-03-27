@@ -10,6 +10,9 @@ command:
 5 - git clone https://github.com/sherlock-project/sherlock.git
 6 - sudo passwd root  ===>>> default : toor  ===>>> complex : Aa@#1 ===>> 8 charcter
 7 - sudo adduser name ===>>> limited
+8 - sudo apt install tilix ===>>> multi terminal
+9 - 
+
 
 =================================================================
 
@@ -18,3 +21,6 @@ search browser: auto tor ip change
 https://github.com/FDX100/Auto_Tor_IP_changer
 
 IP system: https://dnsleaktest.com/
+
+=================================================================
+
