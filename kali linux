@@ -14,6 +14,7 @@ command:
 9 - sudo apt install -y torbrowser-launcher ===>>> torbrowser-launcher 
 https://github.com/TheTorProject/gettorbrowser.git
 
+change IP : kali mirror list ===>>> etc/source.list add mirror
 
 =================================================================
 
