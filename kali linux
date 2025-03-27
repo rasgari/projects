@@ -9,7 +9,7 @@ command:
 4 - sudo apt install git
 5 - git clone https://github.com/sherlock-project/sherlock.git
 6 - sudo passwd root  ===>>> default : toor  ===>>> complex : Aa@#1 ===>> 8 charcter
-
+7 - sudo adduser name ===>>> limited
 
 =================================================================
 
