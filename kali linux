@@ -8,7 +8,7 @@ command:
 3 - sudo apt dist-upgrade
 4 - sudo apt install git
 5 - git clone https://github.com/sherlock-project/sherlock.git
-6 - sudo passwd root
+6 - sudo passwd root  ===>>> default : toor  ===>>> complex : Aa@#1 ===>> 8 charcter
 
 
 =================================================================
