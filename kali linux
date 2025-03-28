@@ -27,3 +27,28 @@ IP system: https://dnsleaktest.com/
 
 =================================================================
 
+
+https://github.com/0xKayala/NucleiScanner
+
+Nuclei + Subfinder + Gauplus + Paramspider + Nuclei Templates = NucleiScanner
+
+Tools included:
+Nuclei git clone https://github.com/projectdiscovery/nuclei.git
+
+Subfinder git clone https://github.com/projectdiscovery/subfinder.git
+
+Gauplus git clone https://github.com/bp0lr/gauplus.git
+
+ParamSpider git clone https://github.com/0xKayala/ParamSpider.git
+
+httpx git clone https://github.com/projectdiscovery/httpx.git
+
+Templates:
+Nuclei Templates git clone https://github.com/projectdiscovery/nuclei-templates.git
+
+git clone https://github.com/0xKayala/NucleiScanner.git && cd NucleiScanner && sudo chmod +x install.sh && ./install.sh && ns -h && cd ..
+
+command: ns -d
+
+=================================================================
+
