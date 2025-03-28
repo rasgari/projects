@@ -15,6 +15,7 @@ command:
 https://github.com/TheTorProject/gettorbrowser.git
 
 change IP : kali mirror list ===>>> etc/apt/source.list add mirror
+https://http.kali.org/README?mirrorlist
 
 =================================================================
 
