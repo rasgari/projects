@@ -3,7 +3,7 @@ kali linux:
 
 command:
 
-1 - sudo apt update
+1 - sudo apt update  ===>>>month
 2 - sudo apt upgrade
 3 - sudo apt dist-upgrade
 4 - sudo apt install git
