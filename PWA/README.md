@@ -26,3 +26,12 @@ if ('serviceWorker' in navigator) {
 - حذف ویژگی‌های غیرضروری مانند display_override.
 
 
+دو منبع برای نصب pwa که می توانید استفاده کنید
+
+فارسی
+https://github.com/alirahimi818/simple-PWA
+
+
+انگلیسی
+https://github.com/khmyznikov/pwa-install
+
