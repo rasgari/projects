@@ -26,6 +26,14 @@ if ('serviceWorker' in navigator) {
 - حذف ویژگی‌های غیرضروری مانند display_override.
 
 
+اگر از فریمورک خاصی استفاده می‌کنی:
+React → از پکیج create-react-app استفاده کنی، خودش فایل Service Worker و manifest داره.
+
+Vue → با پلاگین @vue/cli-plugin-pwa راحت میشه.
+
+Vite → از پلاگین vite-plugin-pwa استفاده کن.
+
+
 دو منبع برای نصب pwa که می توانید استفاده کنید
 
 فارسی
