@@ -50,7 +50,7 @@ https://github.com/alirahimi818/simple-PWA
 
 
 انگلیسی
-https://github.com/khmyznikov/pwa-install
-https://github.com/pwa-builder/pwa-starter
-https://github.com/filips123/PWAsForFirefox
-https://github.com/Mishra121/PWA-project
+- https://github.com/khmyznikov/pwa-install
+- https://github.com/pwa-builder/pwa-starter
+- https://github.com/filips123/PWAsForFirefox
+- https://github.com/Mishra121/PWA-project
