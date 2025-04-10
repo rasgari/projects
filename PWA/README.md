@@ -33,6 +33,15 @@ Vue → با پلاگین @vue/cli-plugin-pwa راحت میشه.
 
 Vite → از پلاگین vite-plugin-pwa استفاده کن.
 
+سرور واقعی با HTTPS:
+برای محیط واقعی (production)، باید از گواهی SSL استفاده کنی. این روش‌ها رو داری:
+
+✅ استفاده از Let's Encrypt (رایگان)
+با ابزارهایی مثل Certbot یا تنظیمات در سرورهایی مثل Nginx/Apache، می‌تونی گواهی رایگان دریافت کنی.
+
+sudo apt install certbot
+sudo certbot --nginx
+
 
 دو منبع برای نصب pwa که می توانید استفاده کنید
 
@@ -44,3 +53,4 @@ https://github.com/alirahimi818/simple-PWA
 https://github.com/khmyznikov/pwa-install
 https://github.com/pwa-builder/pwa-starter
 https://github.com/filips123/PWAsForFirefox
+https://github.com/Mishra121/PWA-project
