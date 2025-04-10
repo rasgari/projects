@@ -46,7 +46,7 @@ sudo certbot --nginx
 دو منبع برای نصب pwa که می توانید استفاده کنید
 
 فارسی
-https://github.com/alirahimi818/simple-PWA
+- https://github.com/alirahimi818/simple-PWA
 
 
 انگلیسی
