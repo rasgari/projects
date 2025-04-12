@@ -52,3 +52,46 @@ command: ns -d
 
 =================================================================
 
+بهترین و کاربردی ترین ابزارهای هک عبارتند از :
+
+1-NMAP :Network Scan and Discovery
+
+2-OWASP: Web Application Vulnerabilty Detector
+
+3-Metasploit:Exploit and Create Back-door
+
+4-John The Ripper:Password Cracking
+
+5-Wireshark:Protocol Analyzer
+
+6-Cain&Abel: Password Recovery and Cracking
+
+7-Meltego:Tools for Data breach detection
+
+8-THC Hydra:Network Password Cracking
+
+9-Nikto:Web application vulnerabilty Detector
+
+10-LC5:Password Cracking
+
+11-NetSparker:Web Application Security Analyzer
+
+12-Burp Suite:Web Security Tester
+
+13-Ettercap:Protocol Analyzer
+
+14-Aircrack-ng:Wireless password cracking
+
+15-GFI LANGaurd:Network Vulnerabilty Detector
+
+16-Savvius: network forensics software
+
+17-Hashcat:robust password cracking
+
+18-IKEcrack:Authentication Cracker
+
+19-SQLMap: detecting and exploiting SQL Injection weaknesses
+
+20-Medusa:Online brute-force and password Cracking
+
+========================================
