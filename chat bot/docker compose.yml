@@ -1,5 +1,32 @@
- services:
+services:
+ollama:
+    image: ollama/ollama:latest
+    container_name: ollama
+    ports:
+      - "11434:11434"                # پورت پیش‌فرض API Ollama
+    volumes:
+      - ollama_data:/root/.ollama   # ذخیره داده‌های مدل‌ها و تنظیمات Ollama
+    restart: unless-stopped
+    tty: true
+    networks:
+      - app-test  
 
+  open-webui:
+    image: ghcr.io/open-webui/open-webui:main
+    container_name: open-webui
+    depends_on:
+      - ollama
+    ports:
+      - "3000:8080"                 # دسترسی به رابط وب Open WebUI روی پورت 3000
+    volumes:
+      - openwebui_data:/app/backend/data   # ذخیره داده‌ها و تنظیمات Open WebUI
+    environment:
+      - OLLAMA_BASE_URL=http://ollama:11434  # اتصال به Ollama API
+    extra_hosts:
+      - "host.docker.internal:host-gateway"  # برای دسترسی به میزبان از داخل کانتینر
+    restart: unless-stopped
+    networks:
+      - app-test    
    portainer:
       image: proxy-repo.saberin.co:8082/portainer/portainer-ce:2.14.1-alpine
       container_name: portainer
