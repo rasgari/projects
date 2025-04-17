@@ -1,0 +1,27 @@
+command:
+
+===>>> windows :
+
+- cmd
+docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+
+- exe
+https://ollama.com/
+
+- cmd
+ollama run llama3.1
+  
+
+
+  
+
+
+===>>> linux :
+
+docker image
+https://hub.docker.com/r/dyrnq/open-webui
+
+https://hub.docker.com/r/ollama/ollama/tags
+
+
+ollama pull llama3.2
