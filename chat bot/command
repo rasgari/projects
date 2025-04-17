@@ -21,8 +21,12 @@ http://localhost:3000
 
 - docker image
 https://hub.docker.com/r/dyrnq/open-webui
+===>>> docker pull dyrnq/open-webui
+
 
 https://hub.docker.com/r/ollama/ollama/tags
+===>>> docker pull ollama/ollama
+
 
 - docker load -i open-webui
 - docker load -i ollama
