@@ -18,10 +18,15 @@ ollama run llama3.1
 
 ===>>> linux :
 
-docker image
+- docker image
 https://hub.docker.com/r/dyrnq/open-webui
 
 https://hub.docker.com/r/ollama/ollama/tags
+
+- docker load -i open-webui
+- docker load -i ollama
+
+- docker compose up -d
 
 
 ollama pull llama3.2
