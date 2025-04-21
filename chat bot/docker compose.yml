@@ -1,46 +1,71 @@
 services:
 
-ollama:
+  ollama:
     image: ollama/ollama:latest
     container_name: ollama
     ports:
-      - "11434:11434"                # پورت پیش‌فرض API Ollama
+      - "11434:11434"               
     volumes:
-      - ollama_data:/root/.ollama   # ذخیره داده‌های مدل‌ها و تنظیمات Ollama
+      - ./chat-bot/ollama_data/models:/data
     restart: unless-stopped
     tty: true
     networks:
-      - app-test  
+      - app-tire
 
-open-webui:
-    image: ghcr.io/open-webui/open-webui:main
+  open-webui:
+    image: dyrnq/open-webui:latest
     container_name: open-webui
     depends_on:
       - ollama
     ports:
-      - "3000:8080"                 # دسترسی به رابط وب Open WebUI روی پورت 3000
+      - "3000:8080"                
     volumes:
-      - openwebui_data:/app/backend/data   # ذخیره داده‌ها و تنظیمات Open WebUI
+      - ./chat-bot/openwebui_data:/data
     environment:
-      - OLLAMA_BASE_URL=http://ollama:11434  # اتصال به Ollama API
+      - OLLAMA_BASE_URL=http://ollama:11434  
     extra_hosts:
-      - "host.docker.internal:host-gateway"  # برای دسترسی به میزبان از داخل کانتینر
+      - "host.docker.internal:host-gateway"  
     restart: unless-stopped
     networks:
-      - app-test    
+      - app-tire
 
-portainer:
-      image: proxy-repo.saberin.co:8082/portainer/portainer-ce:2.14.1-alpine
-      container_name: portainer
-      ports:
-       - "9000:9000"
-      volumes:
-        - /etc/locatime:/etc/localtime:ro
-        - /var/run/docker.sock:/var/run/docker.sock
-        - ./portainer_data:/data
-      networks:
-        - app-test
+  llama3:
+    image: arcsurf/llama3:latest  
+    container_name: llama3_container
+    ports:
+      - "11435:11435"  
+    volumes:
+      - ./chat-bot/llama3_data:/data 
+    restart: unless-stopped
+    command: >
+      bash -c "
+      ollama pull llama3 &&
+      ollama serve --host 0.0.0.0"
+    networks:
+      - app-tire
+
+
+  portainer:
+    image: proxy-repo.saberin.co:8082/portainer/portainer-ce:2.14.1-alpine
+    container_name: portainer
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./chat-bot/portainer:/data
+    ports:
+      - 9000:9000
+    networks:
+      - app-tire
+
+volumes:
+  ollama_data:
+  openwebui_data:
+  portainer_data:
+  llama3_data:
 
 networks:
-  app-test:
+  app-tire:
     driver: bridge
