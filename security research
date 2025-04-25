@@ -17,13 +17,14 @@ security research:
 
 - Radware Live Threat Map ===>>> https://livethreatmap.radware.com
 
+- vulnerability direct object
 
-
-Authentication
+- Authentication
 Authentication bypass
 Oathu
 Jsonp
 SSo
+
 CORS
 Token transfer
 Xss , authentication
