@@ -1,4 +1,4 @@
-OWASP Top 10 for Large Language Model Applications:
+## OWASP Top 10 for Large Language Model Applications:
 
 OWASP Top 10 for Large Language Model Applications version 1.1
 LLM01: Prompt Injection
