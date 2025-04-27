@@ -14,15 +14,13 @@ social engineering :
 
 
 ## link portswigger:
-| https://portswigger.net/web-security/llm-attacks                               |
 
-| https://portswigger.net/web-security/llm-attacks/lab-indirect-prompt-injection  |
-
-| https://portswigger.net/web-security/llm-attacks/lab-exploiting-insecure-output-handling-in-llms |
-
-| https://portswigger.net/web-security/llm-attacks/lab-exploiting-llm-apis-with-excessive-agency  |
-
-| https://portswigger.net/web-security/llm-attacks/lab-exploiting-vulnerabilities-in-llm-apis |
+| TITLE            | LINK                                                                                                             |      
+| LLM              | https://portswigger.net/web-security/llm-attacks                                                                 |
+| prompt injection | https://portswigger.net/web-security/llm-attacks/lab-indirect-prompt-injection                                   |
+| exploit          | https://portswigger.net/web-security/llm-attacks/lab-exploiting-insecure-output-handling-in-llms                 |
+| exploit          | https://portswigger.net/web-security/llm-attacks/lab-exploiting-llm-apis-with-excessive-agency                   |
+| exploit          | https://portswigger.net/web-security/llm-attacks/lab-exploiting-vulnerabilities-in-llm-apis                      |
 
 
 
