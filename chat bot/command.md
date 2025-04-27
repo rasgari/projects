@@ -12,6 +12,7 @@ docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-
 https://ollama.com/
 
 - cmd
+```bash
 ollama run llama3.1
   
 - browser 
