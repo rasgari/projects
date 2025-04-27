@@ -17,6 +17,8 @@ https://portswigger.net/web-security/llm-attacks/lab-exploiting-llm-apis-with-ex
 https://portswigger.net/web-security/llm-attacks/lab-exploiting-vulnerabilities-in-llm-apis
 
 
+
+
 https://www.vaadata.com/blog/exploring-llm-vulnerabilities-and-security-best-practices/
 https://hiddenlayer.com/innovation-hub/prompt-injection-attacks-on-llms/
 
