@@ -1,4 +1,4 @@
-other chat bot
+# other chat bot
 
 ## librechat:
 
