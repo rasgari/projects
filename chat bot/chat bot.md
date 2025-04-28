@@ -31,7 +31,9 @@ https://www.tidio.com/
 ## LLM mistral
 
 
-‘’’bash
+‘’’shell
+
 ollama run mistral
+
 ‘’’
 
