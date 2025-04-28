@@ -2,9 +2,9 @@
 
 ## librechat:
 
-===>>> https://www.librechat.ai/
+===>>> [ site ](https://www.librechat.ai/)
 
-===>>> https://github.com/LibreChat-AI/librechat.ai
+===>>> [ github ](https://github.com/LibreChat-AI/librechat.ai)
 
 
 ===========================================================================
