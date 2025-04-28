@@ -1,3 +1,5 @@
+[ Reference ](https://github.com/verazuo/jailbreak_llms/blob/main/data/)
+
 # Prompt Dataset
 
 `jailbreak_prompts_yyyy_mm_dd.csv` and `regular_prompts_yyyy_mm_dd.csv` is the collected prompts in our study. `_yyyy_mm_dd` denotes the update date. The meaning of each column is as follows.
