@@ -20,7 +20,7 @@ other chat bot
 ===>>> [ github - llama ](https://github.com/run-llama/llama_index)
 
 
-===>>> https://cloud.llamaindex.ai/login/callback?provider=google
+===>>> [ cloud - llamaindex ](https://cloud.llamaindex.ai/login/callback?provider=google)
 
 
 ===========================================================================
