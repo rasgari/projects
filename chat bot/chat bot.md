@@ -26,5 +26,9 @@ https://mattermost.com/download/
 ===>>> tidio
 https://www.tidio.com/
 
+===============================================================
 
-
+## LLM mistral
+'''
+ollama run mistral
+'''
