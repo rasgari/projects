@@ -10,7 +10,7 @@ other chat bot
 
 ## llamaindex:
 
-===>>> [ site ] ( https://www.llamaindex.ai/ )
+===>>> [ site ]( https://www.llamaindex.ai/ )
 ===>>> https://docs.llamaindex.ai/en/stable/
 ===>>> https://docs.llamaindex.ai/en/stable/getting_started/starter_example/
 ===>>> https://github.com/run-llama/llama_index
