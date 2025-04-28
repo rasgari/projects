@@ -15,9 +15,9 @@ other chat bot
 
 ===>>> [ docs - stable ](https://docs.llamaindex.ai/en/stable/)
 
-===>>> https://docs.llamaindex.ai/en/stable/getting_started/starter_example/
+===>>> [ docs - starter ](https://docs.llamaindex.ai/en/stable/getting_started/starter_example/)
 
-===>>> https://github.com/run-llama/llama_index
+===>>> [ github - llama ](https://github.com/run-llama/llama_index)
 
 
 ===>>> https://cloud.llamaindex.ai/login/callback?provider=google
