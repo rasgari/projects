@@ -30,8 +30,8 @@ https://www.tidio.com/
 
 ## LLM mistral
 
-'''bash
 
+‘’’bash
 ollama run mistral
+‘’’
 
-'''
