@@ -7,7 +7,15 @@
 ## model ollama
 ===>>> [ollama](https://ollama.com/download/windows)
 
-### for install ===>>> cmd ===>>> ```bash ollama run llama3 ```<<<=== 
+### for install 
+===>>> cmd 
+
+
+```bash
+
+ollama run llama3 
+
+``` 
 
 ## Similar site:
 ===>>> [docanalyzer](DocAnalyzer.ai)
