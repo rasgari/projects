@@ -1,15 +1,15 @@
-chat bot:
+# chat bot:
 
 
-AI platform for questions and answers ( FAQ ) :
+## AI platform for questions and answers ( FAQ ) :
 ===>>> [openwebui](https://openwebui.com)
 
-model ollama
+## model ollama
 ===>>> [ollama](https://ollama.com/download/windows)
 
-for install ===>>> cmd ===>>> ```bash ollama run llama3 ```<<<=== 
+### for install ===>>> cmd ===>>> ```bash ollama run llama3 ```<<<=== 
 
-Similar site:
+## Similar site:
 ===>>> [docanalyzer](DocAnalyzer.ai)
 
 ===>>> [github llm](https://github.com/mintplex-labs/anything-llm)   ===>>> [github docker](https://github.com/Mintplex-Labs/anything-llm/blob/master/docker/HOW_TO_USE_DOCKER.md)
@@ -19,11 +19,11 @@ Similar site:
 
 ===============================================================
 
-mattermost  ===>>> windows
+## mattermost  ===>>> windows
 [mattermost](https://mattermost.com/download/)
 
 
-===>>> tidio
+===>>>## tidio
 [tidio](https://www.tidio.com/0)
 
 ===============================================================
