@@ -7,7 +7,7 @@ AI platform for questions and answers ( FAQ ) :
 model ollama
 ===>>> https://ollama.com/download/windows
 
-for install ===>>> cmd ===>>> ollama run llama3 <<<=== 
+for install ===>>> cmd ===>>> ```bash ollama run llama3 ```<<<=== 
 
 Similar site:
 ===>>> DocAnalyzer.ai
