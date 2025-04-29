@@ -2,29 +2,29 @@ chat bot:
 
 
 AI platform for questions and answers ( FAQ ) :
-===>>> https://openwebui.com
+===>>> [openwebui](https://openwebui.com)
 
 model ollama
-===>>> https://ollama.com/download/windows
+===>>> [ollama](https://ollama.com/download/windows)
 
 for install ===>>> cmd ===>>> ```bash ollama run llama3 ```<<<=== 
 
 Similar site:
-===>>> DocAnalyzer.ai
+===>>> [docanalyzer](DocAnalyzer.ai)
 
-===>>> https://github.com/mintplex-labs/anything-llm   ===>>> https://github.com/Mintplex-Labs/anything-llm/blob/master/docker/HOW_TO_USE_DOCKER.md
+===>>> [github llm](https://github.com/mintplex-labs/anything-llm)   ===>>> [github docker](https://github.com/Mintplex-Labs/anything-llm/blob/master/docker/HOW_TO_USE_DOCKER.md)
 
-===>>> https://localai.io/basics/getting_started/
+===>>> [localai](https://localai.io/basics/getting_started/)
 
 
 ===============================================================
 
 mattermost  ===>>> windows
-https://mattermost.com/download/
+[mattermost](https://mattermost.com/download/)
 
 
 ===>>> tidio
-https://www.tidio.com/
+[tidio](https://www.tidio.com/0)
 
 ===============================================================
 
