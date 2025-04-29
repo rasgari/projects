@@ -36,6 +36,13 @@ ollama run llama3
 
 ===============================================================
 
+# PersianLLAMA
+
+[ site ](https://huggingface.co/ViraIntelligentDataMining/PersianLLaMA-13B)
+
+
+===============================================================
+
 ## LLM mistral
 
 
