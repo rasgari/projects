@@ -31,14 +31,13 @@ ollama run llama3
 [mattermost](https://mattermost.com/download/)
 
 
-===>>>## tidio
-[tidio](https://www.tidio.com/0)
+===>>> [tidio](https://www.tidio.com/0)
 
 ===============================================================
 
 # PersianLLAMA
 
-[ site ](https://huggingface.co/ViraIntelligentDataMining/PersianLLaMA-13B)
+===>>> [ site ](https://huggingface.co/ViraIntelligentDataMining/PersianLLaMA-13B)
 
 
 ===============================================================
