@@ -31,5 +31,5 @@ docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-
 
 ```
 مرورگر را باز کنید و به آدرس
-'http://localhost:3000'
+''http://localhost:3000''
 بروید
