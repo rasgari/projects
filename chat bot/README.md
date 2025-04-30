@@ -1,3 +1,5 @@
+[reference](https://github.com/ollama/ollama)
+
 ## Quickstart
 
 To run and chat with [Llama 3.2](https://ollama.com/library/llama3.2):
