@@ -1,18 +1,27 @@
 ## link chat bot:
 
+# open web ui
+
 [ website main ](https://openwebui.com/)
 
 [github open webui](https://github.com/open-webui/open-webui/tree/main)
 
 [ docs open webui ](https://docs.openwebui.com/)
 
-[ github ollama ](https://github.com/ollama/ollama)
 
-[ site llama ](https://www.llama.com/)
+# ollama
+
+[ github ollama ](https://github.com/ollama/ollama)
 
 [ site ollama ](https://ollama.com)
 
 [ model ollama library ](https://ollama.com/library)
+
+
+# llama
+
+[ site llama ](https://www.llama.com/)
+
 
 آموزش نصب و راه اندازی open webui ===>>>
 بعد از نصب داکر این دستور در cmd وارد می کنید
