@@ -21,7 +21,7 @@ social engineering :
 | prompt injection | [prompt injection](https://portswigger.net/web-security/llm-attacks/lab-indirect-prompt-injection)                                   |
 | exploit          | [exploit](https://portswigger.net/web-security/llm-attacks/lab-exploiting-insecure-output-handling-in-llms)                 |
 | exploit          | [exploit](https://portswigger.net/web-security/llm-attacks/lab-exploiting-llm-apis-with-excessive-agency)                   |
-| exploit          | [exploit](https://portswigger.net/web-security/llm-attacks/lab-exploiting-vulnerabilities-in-llm-apis0                      |
+| exploit          | [exploit](https://portswigger.net/web-security/llm-attacks/lab-exploiting-vulnerabilities-in-llm-apis0)                      |
 
 
 
