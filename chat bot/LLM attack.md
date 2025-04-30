@@ -26,7 +26,7 @@ social engineering :
 
 
 
-===>>> https://www.vaadata.com/blog/exploring-llm-vulnerabilities-and-security-best-practices/
+===>>> [vaadata](https://www.vaadata.com/blog/exploring-llm-vulnerabilities-and-security-best-practices/)
 
-===>>> https://hiddenlayer.com/innovation-hub/prompt-injection-attacks-on-llms/
+===>>> [hiddenlayer](https://hiddenlayer.com/innovation-hub/prompt-injection-attacks-on-llms/)
 
