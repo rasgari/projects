@@ -1,7 +1,8 @@
 # OWASP Top 10 for Large Language Model Applications:
 
-OWASP Top 10 for Large Language Model Applications version 1.1
-LLM01: Prompt Injection
+## OWASP Top 10 for Large Language Model Applications version 1.1
+
+# 'LLM01: Prompt Injection'
 Manipulating LLMs via crafted inputs can lead to unauthorized access, data breaches, and compromised decision-making.
 
 LLM02: Insecure Output Handling
