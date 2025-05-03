@@ -45,7 +45,7 @@ services:
 
   prometheus:
     container_name: prometheus
-    image: proxy-repo.saberin.co:8082/prom/prometheus:latest 
+    image: prom/prometheus:latest
 # echo $UID --> add UID of user that want to run docker-compose ex: root = 0 or admin = x then add to image's user   
     user: "0:0"  
     volumes:
@@ -67,7 +67,7 @@ services:
 
   node-exporter:
     container_name: node-exporter
-    image: proxy-repo.saberin.co:8082/prom/node-exporter:latest
+    image: prom/node-exporter:latest
     volumes:
       - /proc:/host/proc:ro
       - /sys:/host/sys:ro
@@ -85,7 +85,7 @@ services:
 
   grafana:
     container_name: grafana
-    image: proxy-repo.saberin.co:8082/grafana/grafana:latest
+    image: grafana/grafana:latest
     user: "0:0" 
     ports:
       - 3000:3000
