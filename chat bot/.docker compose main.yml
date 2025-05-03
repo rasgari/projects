@@ -1,0 +1,127 @@
+services:
+
+  ollama:
+    image: alpine/llama3.2:latest
+    container_name: ollama
+    ports:
+      - "11434:11434"               
+    volumes:
+      - ./chat-bot/ollama_data/models:/data
+    restart: unless-stopped
+    tty: true
+    networks:
+      - app-tire
+
+  open-webui:
+    image: dyrnq/open-webui:latest
+    container_name: open-webui
+    depends_on:
+      - ollama
+    ports:
+      - "5000:8080"                
+    volumes:
+      - ./chat-bot/openwebui_data:/data
+    environment:
+      - OLLAMA_BASE_URL=http://ollama:11434  
+    extra_hosts:
+      - "host.docker.internal:host-gateway"  
+    restart: unless-stopped
+    networks:
+      - app-tire
+
+ # llama3:
+  #  image: alpine/llama3.2:latest
+   # container_name: llama3_container
+   # ports:
+    #  - "8000:8000" 
+   # volumes:
+    #  - ./chat-bot/llama3_data:/data 
+   # restart: unless-stopped
+   # environment:
+    #  - LLAMA_MODEL=llama3  
+   # command: ["python", "/app/run_llama.py"] 
+   # networks:
+    #  - app-tire
+
+  prometheus:
+    container_name: prometheus
+    image: proxy-repo.saberin.co:8082/prom/prometheus:latest 
+# echo $UID --> add UID of user that want to run docker-compose ex: root = 0 or admin = x then add to image's user   
+    user: "0:0"  
+    volumes:
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - ./prometheus/data:/prometheus
+    command:
+      --config.file=/etc/prometheus/prometheus.yml
+      --storage.tsdb.path=/prometheus
+      --storage.tsdb.retention.time=30d
+    expose:
+     - 9090
+    ports:
+     - 9090:9090
+    links:
+     - node-exporter:node-exporter
+    networks:
+      - app-tire
+    restart: unless-stopped
+
+  node-exporter:
+    container_name: node-exporter
+    image: proxy-repo.saberin.co:8082/prom/node-exporter:latest
+    volumes:
+      - /proc:/host/proc:ro
+      - /sys:/host/sys:ro
+      - /:/rootfs:ro
+    command: 
+      - '--path.procfs=/host/proc' 
+      - '--path.sysfs=/host/sys'
+      - --collector.filesystem.ignored-mount-points
+      - "^/(sys|proc|dev|host|etc|rootfs/var/lib/docker/containers|rootfs/var/lib/docker/overlay2|rootfs/run/docker/netns|rootfs/var/lib/docker/aufs)($$|/)"
+    ports:
+      - 9150:9100
+    networks:
+      - app-tire
+    restart: unless-stopped
+
+  grafana:
+    container_name: grafana
+    image: proxy-repo.saberin.co:8082/grafana/grafana:latest
+    user: "0:0" 
+    ports:
+      - 3000:3000
+    volumes:
+      - ./grafana/data:/var/lib/grafana
+      - ./grafana/provisioning/:/etc/grafana/provisioning/
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_USERS_ALLOW_SIGN_UP=false
+    networks:
+      - app-tire
+    links:
+      - prometheus:prometheus
+    restart: unless-stopped
+
+  portainer:
+    image: proxy-repo.saberin.co:8082/portainer/portainer-ce:2.14.1-alpine
+    container_name: portainer
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./chat-bot/portainer:/data
+    ports:
+      - 9000:9000
+    networks:
+      - app-tire
+
+volumes:
+  ollama_data:
+  openwebui_data:
+  portainer_data:
+  llama3_data:
+
+networks:
+  app-tire:
+    driver: bridge
