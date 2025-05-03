@@ -8,9 +8,18 @@ services:
       - ./prometheus.yml:/etc/prometheus/prometheus.yml:ro
       - ./prometheus/data:/prometheus
     command:
-    
+      --config.file=/etc/prometheus/prometheus.yml
+      --storage.tsdb.path=/prometheus
+      --storage.tsdb.retention.time=30d
+    expose:
+      - 9090
     ports:
       - "9090:9090"
+    links:
+      - node-exporter:node-exporter
+    networks:
+      - app-tire
+    restart: unless-stopped
 
   grafana:
     image: grafana/grafana:latest
