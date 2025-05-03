@@ -1,16 +1,16 @@
 services:
 
-  ollama:
-    image: ollama/ollama:latest
-    container_name: ollama
-    ports:
-      - "11434:11434"               
-    volumes:
-      - ./chat-bot/ollama_data/models:/data
-    restart: unless-stopped
-    tty: true
-    networks:
-      - app-tire
+ # ollama:
+   # image: ollama/ollama:latest
+   # container_name: ollama
+   # ports:
+   #   - "11434:11434"               
+   # volumes:
+   #   - ./chat-bot/ollama_data/models:/data
+   # restart: unless-stopped
+   # tty: true
+   # networks:
+   #  - app-tire
 
   open-webui:
     image: dyrnq/open-webui:latest
