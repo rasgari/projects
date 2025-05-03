@@ -102,7 +102,7 @@ services:
     restart: unless-stopped
 
   portainer:
-    image: proxy-repo.saberin.co:8082/portainer/portainer-ce:2.14.1-alpine
+    image: portainer/portainer-ce:latest
     container_name: portainer
     restart: unless-stopped
     security_opt:
