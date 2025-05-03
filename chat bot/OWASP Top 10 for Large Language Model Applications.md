@@ -2,13 +2,13 @@
 
 ## OWASP Top 10 for Large Language Model Applications version 1.1
 
-# "LLM01: Prompt Injection"
+### LLM01: Prompt Injection
 Manipulating LLMs via crafted inputs can lead to unauthorized access, data breaches, and compromised decision-making.
 
-LLM02: Insecure Output Handling
+### LLM02: Insecure Output Handling
 Neglecting to validate LLM outputs may lead to downstream security exploits, including code execution that compromises systems and exposes data.
 
-LLM03: Training Data Poisoning
+### LLM03: Training Data Poisoning
 Tampered training data can impair LLM models leading to responses that may compromise security, accuracy, or ethical behavior.
 
 LLM04: Model Denial of Service
