@@ -28,9 +28,20 @@ services:
       - "3000:3000"
     environment:
       - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_USERS_ALLOW_SIGN_UP=false
     volumes:
-      - grafana_data:/var/lib/grafana
-
+      - ./grafana/data:/var/lib/grafana
+      - ./grafana/provisioning/:/etc/grafana/provisioning/
+    user: "0:0" 
+    ports:
+      - 3000:3000
+    volumes:
+    networks:
+      - app-tire
+    links:
+      - prometheus:prometheus
+    restart: unless-stopped
+ 
   node-exporter:
     image: prom/node-exporter:latest
     container_name: node-exporter
