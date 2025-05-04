@@ -122,6 +122,7 @@ grafana & promethus
 فعال کنید که روند memory & CPU  مشاهده کنید
 
 
+[persian LLAMA 13B](https://huggingface.co/ViraIntelligentDataMining/PersianLLaMA-13B)
 
 
 ```bash
