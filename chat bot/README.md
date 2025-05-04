@@ -121,3 +121,9 @@ ollama run llama3
 grafana & promethus 
 فعال کنید که روند memory & CPU  مشاهده کنید
 
+
+
+```bash
+./main -t 10 -ngl 32 -m persian_llama_7b.Q4_K_M.gguf --color -c 2048 --temp 0.7 --repeat_penalty 1.1 -n -1 -p "### Instruction: یک شعر حماسی در مورد کوه دماوند بگو ### Input:  ### Response:"
+
+```
