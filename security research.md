@@ -18,7 +18,7 @@
 
 ##- NEXTJS? ===>>> react
 
-         ===>>> [ nextjs ](https://nextjs.org/docs)
+[ nextjs ](https://nextjs.org/docs)
 
 ## - Radware Live Threat Map? ===>>> [ livethreatmap ](https://livethreatmap.radware.com)
 
