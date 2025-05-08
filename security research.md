@@ -25,13 +25,13 @@
 ## - vulnerability direct object?
 
 ## - Authentication?
-===>>> Authentication bypass
-===>>> Oathu
-===>>> Jsonp
-===>>> SSo
+- Authentication bypass
+-  Oathu
+- Jsonp
+- SSo
 
-===>>> CORS
-===>>> Token transfer
-===>>> Xss , authentication
+- CORS
+- Token transfer
+- Xss , authentication
 
 
