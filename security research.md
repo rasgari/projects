@@ -1,30 +1,30 @@
-security research:
+# security research:
 
-- LLM attack?
+## - LLM attack?
   
  ===>>> **forbidden_question**
  
  ===>>> **prompts injection**
 
-- secure coding?
+## - secure coding?
 
-- code injection?
+## - code injection?
 
-- web3?
+## - web3?
 
-- why 1==1 is true but 128==128 is false in java?
+## - why 1==1 is true but 128==128 is false in java?
 
-- JWT?
+## - JWT?
 
-- NEXTJS? ===>>> react
+##- NEXTJS? ===>>> react
 
-         ===>>> https://nextjs.org/docs
+         ===>>> [ nextjs ](https://nextjs.org/docs)
 
-- Radware Live Threat Map? ===>>> https://livethreatmap.radware.com
+## - Radware Live Threat Map? ===>>> https://livethreatmap.radware.com
 
-- vulnerability direct object?
+## - vulnerability direct object?
 
-- Authentication?
+## - Authentication?
 ===>>> Authentication bypass
 ===>>> Oathu
 ===>>> Jsonp
