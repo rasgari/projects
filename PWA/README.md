@@ -1,4 +1,4 @@
-PWA‌:
+# PWA‌:
 
 برنامه های وب پیشرفته با یک وب سایت/برنامه سنتی شروع می شوند و به تدریج با ویژگی های مدرن بهبود می یابند. وقتی سایت‌ها امن هستند، می‌توانند از ServiceWorkers برای کاربران ارائه‌دهنده با پشتیبانی آفلاین استفاده کنند، اعلان‌های Push می‌توانند به جذب مجدد کاربران کمک کنند، و Web App Manifests به کاربران اجازه می‌دهد PWA را در کنار برنامه‌های بومی نصب کنند.
 
@@ -9,7 +9,7 @@ PWA‌:
 
 - سرویس ورکر باید فعال باشد
 
-- code service worker : 
+## - code service worker : 
 
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/service-worker.js')
@@ -38,16 +38,15 @@ Vite → از پلاگین vite-plugin-pwa استفاده کن.
 
 ✅ استفاده از Let's Encrypt (رایگان)
 با ابزارهایی مثل Certbot یا تنظیمات در سرورهایی مثل Nginx/Apache، می‌تونی گواهی رایگان دریافت کنی.
-
+```bash
 sudo apt install certbot
 sudo certbot --nginx
-
+```
 
 دو منبع برای نصب pwa که می توانید استفاده کنید
 
 فارسی
-- https://github.com/alirahimi818/simple-PWA
-
+- [github alirahimi81](https://github.com/alirahimi818/simple-PWA)
 
 انگلیسی
 - https://github.com/khmyznikov/pwa-install
