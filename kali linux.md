@@ -1,7 +1,7 @@
 # kali linux:
 
 
-command:
+# command:
 
 1 - sudo apt update  ===>>>month
 2 - sudo apt upgrade
@@ -14,11 +14,16 @@ command:
 9 - sudo apt install -y torbrowser-launcher ===>>> torbrowser-launcher 
 https://github.com/TheTorProject/gettorbrowser.git
 
-change IP : kali mirror list ===>>> etc/apt/source.list add mirror
+## change IP : kali mirror list ===>>> etc/apt/source.list add mirror
 https://http.kali.org/README?mirrorlist
 
 =================================================================
 
+# last CVE
+
+curl cvedb.shodan.io/cves | jq | grep "cve_id"
+
+=================================================================
 change IP:
 search browser: auto tor ip change
 https://github.com/FDX100/Auto_Tor_IP_changer
