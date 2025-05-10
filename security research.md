@@ -3,13 +3,17 @@
 
 # security research:
 
-## - LLM attack?
+# - LLM attack?
   
  ===>>> **forbidden_question**
  
  ===>>> **prompts injection**
 
-## - secure coding?
+# - secure coding?
+
+# - Risk management
+
+# - RED Team
 
 ## - code injection?
 
