@@ -15,9 +15,11 @@
 
 # - RED Team
 
-## - code injection?
+# - Needs assessment
 
-## - web3?
+# - code injection?
+
+# - web3?
 
 ## - why 1==1 is true but 128==128 is false in java?
 
