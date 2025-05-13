@@ -56,3 +56,19 @@ docker pull ollama/ollama
 ollama pull llama3.2
 
 ```
+
+## help
+
+```bash
+
+ollama -v
+ollama --version
+ollama start
+ollama list
+ollama show
+ollama ps -start
+oolama ps -stop
+ollama serve
+ollama pull llama3.2
+
+```
