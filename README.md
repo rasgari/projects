@@ -1,62 +1,32 @@
 # projects
 
 
-- shodan
+- [ shodan ](https://github.com/jakejarvis/awesome-shodan-queries)
 
-===>>> https://github.com/jakejarvis/awesome-shodan-queries
+- [ amass ](https://github.com/owasp-amass/amass)
 
-- amass
+- [ portscan ](https://github.com/jboursiquot/portscan)
 
-===>>> https://github.com/owasp-amass/amass
+- [nmap ](https://github.com/nmap/nmap)       
 
-- portscan
+- [ sublist3r ](https://github.com/aboul3la/Sublist3r)
 
-===>>> https://github.com/jboursiquot/portscan
+- [ assetfinder ](https://github.com/tomnomnom/assetfinder)
 
-- nmap
+- [ gau ](https://github.com/lc/gau)
 
-===>>> https://github.com/nmap/nmap       
+- [ FUFF ](https://github.com/ffuf/ffuf)
 
-- sublist3r
+- [ fuzzing ](https://github.com/google/oss-fuzz)
 
-===>>> https://github.com/aboul3la/Sublist3r
+- [ gobuster ](https://github.com/OJ/gobuster)
 
-- assetfinder
+- [ dirsearch ](https://github.com/maurosoria/dirsearch)
 
-===>>> https://github.com/tomnomnom/assetfinder
+- [wpscan ](https://github.com/wpscanteam/wpscan)
 
-- gau
+- [ nuclei's ](https://github.com/projectdiscovery/nuclei)
 
-===>>> https://github.com/lc/gau
+- [ nikto ](https://github.com/sullo/nikto)
 
-- FUFF
-
-===>>> https://github.com/ffuf/ffuf
-
-- fuzzing
-
-===>>> https://github.com/google/oss-fuzz
-
-- gobuster
-
-===>>> https://github.com/OJ/gobuster
-
-- dirsearch
-
-===>>> https://github.com/maurosoria/dirsearch
-
-- wpscan
-
-===>>> https://github.com/wpscanteam/wpscan
-
-- nuclei's
-
-===>>> https://github.com/projectdiscovery/nuclei
-
-- nikto
-
-===>>> https://github.com/sullo/nikto
-
-- wordlist
-
-===>>> https://github.com/danielmiessler/SecLists
+- [ wordlist ](https://github.com/danielmiessler/SecLists)
