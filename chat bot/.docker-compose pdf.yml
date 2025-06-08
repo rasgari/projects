@@ -1,0 +1,39 @@
+version: "3.9"
+
+services:
+  # سرویس مدل زبانی (PDF-WuKong یا Llama3)
+  llm:
+    image: dustynv/mlc:r36.4.0
+    command: sudonim serve --model dusty-nv/Llama-3.1-8B-Instruct-q4f16_ft-MLC --quantization q4f16_ft --max-batch-size 1 --host 0.0.0.0 --port 9000
+    ports:
+      - "9000:9000"
+    volumes:
+      - ./llm_cache:/root/.cache
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+
+  # رابط کاربری Open WebUI
+  open-webui:
+    image: ghcr.io/open-webui/open-webui:main
+    ports:
+      - "3000:8080"
+    environment:
+      - OLLAMA_BASE_URL=http://llm:9000/v1
+      - OPENAI_API_KEY=sk-dummy
+    depends_on:
+      - llm
+    volumes:
+      - ./webui_data:/app/backend/data
+
+  # اختیاری: سرویس پردازش PDF (مثلاً با OCR)
+  pdf-processor:
+    image: my-pdf-processor:latest
+    build:
+      context: ./pdf-processor
+    volumes:
+      - ./pdfs:/app/pdfs
