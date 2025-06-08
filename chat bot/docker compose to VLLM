@@ -1,0 +1,123 @@
+version: '3.9'
+
+services:
+
+  ollama:
+    image: vllm/vllm-openai:latest  # نسخه GPU و سریع‌تر با API سازگار OpenAI
+    container_name: ollama
+    ports:
+      - "11434:8000"  # پورت OpenAI-compatible
+    volumes:
+      - ./chat-bot/ollama_data/models:/data
+    environment:
+      - MODEL=meta-llama/Llama-3-8b-chat-hf  # نمونه مدل
+      - MAX_NUM_SEQS=64  # تعداد حداکثر درخواست همزمان
+      - TRUST_REMOTE_CODE=true
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
+    runtime: nvidia
+    restart: unless-stopped
+    networks:
+      - app-tier
+
+  open-webui:
+    image: ghcr.io/open-webui/open-webui:main
+    container_name: open-webui
+    depends_on:
+      - ollama
+    ports:
+      - "5000:8080"
+    volumes:
+      - ./chat-bot/openwebui_data:/app/backend/data
+    environment:
+      - OLLAMA_BASE_URL=http://ollama:8000
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    restart: unless-stopped
+    networks:
+      - app-tier
+
+  prometheus:
+    container_name: prometheus
+    image: prom/prometheus:latest
+    user: "0:0"
+    volumes:
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - ./prometheus/data:/prometheus
+    command:
+      - --config.file=/etc/prometheus/prometheus.yml
+      - --storage.tsdb.path=/prometheus
+      - --storage.tsdb.retention.time=30d
+    ports:
+      - 9090:9090
+    networks:
+      - app-tier
+    restart: unless-stopped
+
+  node-exporter:
+    container_name: node-exporter
+    image: prom/node-exporter:latest
+    volumes:
+      - /proc:/host/proc:ro
+      - /sys:/host/sys:ro
+      - /:/rootfs:ro
+    command:
+      - '--path.procfs=/host/proc'
+      - '--path.sysfs=/host/sys'
+    ports:
+      - 9150:9100
+    networks:
+      - app-tier
+    restart: unless-stopped
+
+  grafana:
+    container_name: grafana
+    image: grafana/grafana:latest
+    user: "0:0"
+    ports:
+      - 3000:3000
+    volumes:
+      - ./grafana/data:/var/lib/grafana
+      - ./grafana/provisioning:/etc/grafana/provisioning
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_USERS_ALLOW_SIGN_UP=false
+    networks:
+      - app-tier
+    restart: unless-stopped
+
+  cadvisor:
+    image: gcr.io/cadvisor/cadvisor:latest
+    container_name: cadvisor
+    ports:
+      - "8080:8080"
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:ro
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+    networks:
+      - app-tier
+    restart: unless-stopped
+
+  portainer:
+    image: portainer/portainer-ce:latest
+    container_name: portainer
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./chat-bot/portainer:/data
+    ports:
+      - 9000:9000
+    networks:
+      - app-tier
+
+networks:
+  app-tier:
+    driver: bridge
