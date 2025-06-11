@@ -26,6 +26,8 @@
 
 ## - JWT?
 
+## Web scraping
+
 ##- NEXTJS? ===>>> react
 
 [ nextjs ](https://nextjs.org/docs)
