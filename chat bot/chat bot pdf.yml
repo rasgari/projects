@@ -53,3 +53,7 @@ services:
       
 volumes:
   ollama:
+
+networks:
+app-tire:
+driver: bridge
