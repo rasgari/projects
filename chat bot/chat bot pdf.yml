@@ -55,5 +55,5 @@ volumes:
   ollama:
 
 networks:
-app-tire:
-driver: bridge
+  app-tire:
+    driver: bridge
