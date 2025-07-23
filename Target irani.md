@@ -1,4 +1,4 @@
-#target irani:
+# target irani:
 
 - https://ompfinex.com/bug-bounty
 - https://divar.ir/bugbounty
