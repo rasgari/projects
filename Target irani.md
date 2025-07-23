@@ -1,8 +1,8 @@
 #target irani:
 
-- ompfinex.com/bug-bounty
+- https://ompfinex.com/bug-bounty
 - https://divar.ir/bugbounty
-- nobitex.ir/bugbounty
+- https://nobitex.ir/bugbounty
 - https://efex.pro/fa/bug-bounty
 - https://snapp.ir
 - https://bugbounty.sotoon.ir/account/login
@@ -31,10 +31,10 @@
 - https://tapsi.ir/landings/bug-bounty
 - https://myket.ir
 - https://www.arvancloud.ir/fa/landing/bug-bounty
-- basalam.com
+- https://basalam.com
 - https://irancell.ir
 - https://www.namava.ir
-- arvancloud.ir
+- https://arvancloud.ir
 
 
 ## bugdasht:
