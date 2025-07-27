@@ -43,58 +43,57 @@ C:\Program Files\PostgreSQL\<version>\data\pg_log\
 
 اجرا کن:
 
-matlab
-Copy
-Edit
+```
 Win + R → %temp%
+```
 و همه فایل‌ها رو پاک کن.
-
+```
 Disk Cleanup:
+```
 
-mathematica
-Copy
-Edit
+```
 Start → Disk Cleanup → انتخاب درایو → پاک‌کردن Temporary files، Thumbnailها و غیره
+```
+
 ✅ سطل زباله (Recycle Bin) رو خالی کن.
 
 4. 🧾 در خود PostgreSQL:
 اگر هنوز فضای کمی داری ولی می‌تونی باهاش ارتباط بگیری:
 وارد pgAdmin شو یا psql و اجرا کن:
 
-sql
-Copy
-Edit
+```
 VACUUM FULL;
+```
 → جدول‌ها رو فشرده می‌کنه.
 
 5. 🧭 جابه‌جا کردن دیتا به درایو دیگر
 اگر یک درایو دیگر داری (مثلاً D:)، می‌تونی پوشه دیتا رو منتقل کنی.
 
 مراحل:
+```
 Stop PostgreSQL service
+```
 
 کل پوشه data رو از:
 
-kotlin
-Copy
-Edit
+```
 C:\Program Files\PostgreSQL\<version>\data
+```
 منتقل کن به مثلاً:
 
-makefile
-Copy
-Edit
+```
 D:\PostgresData\
+```
 فایل postgresql.conf رو باز کن و مسیر data_directory رو تغییر بده به:
 
-ini
-Copy
-Edit
+```
 data_directory = 'D:/PostgresData'
+```
 دوباره سرویس PostgreSQL رو Start کن.
 
 6. اگر از MapServer یا GeoServer با PostgreSQL استفاده می‌کنی:
 بررسی کن که فایل‌های cache یا output اون‌ها کجا ذخیره می‌شن (مثلاً temp, logs, یا mapcache) و اون‌ها رو هم پاکسازی کن.
+
 
 ======================================================================
 ======================================================================
