@@ -18,6 +18,8 @@
 - https://bitbarg.com/bug-report
 - https://agaclass.com/bug-bounty
 - https://onhexgroup.ir/best-chrome-extensions-bughunting-cybersecurity/
+- https://taline.ir/bugbounty/
+
 
 
 - https://www.zarinpal.com/landing/bug-bounty/
