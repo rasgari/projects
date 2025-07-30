@@ -2,6 +2,7 @@
 
 ## Quickstart
 
+[![Watch the video](https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg)](https://www.youtube.com/watch?v=n2Xjgh-vqv8)
 
 [! chatbot with ope webui](https://youtu.be/n2Xjgh-vqv8?si=8T39m2kVhlMln9cW)
 
