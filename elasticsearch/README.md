@@ -52,3 +52,12 @@ http.port: 9200
 بهتره اصلاً مستقیم به اینترنت ندیدش و از VPN یا SSH tunnel استفاده کنید.
 
 ======================================================================
+
+از Services ویندوز → Elasticsearch → Restart
+
+یا از CMD:
+
+```
+net stop elasticsearch
+net start elasticsearch
+```
