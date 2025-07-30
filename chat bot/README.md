@@ -2,6 +2,10 @@
 
 ## Quickstart
 
+
+https://youtu.be/n2Xjgh-vqv8?si=8T39m2kVhlMln9cW
+
+
 To run and chat with [Llama 3.2](https://ollama.com/library/llama3.2):
 
 ```shell
