@@ -1,0 +1,40 @@
+  postgresql:
+    image: /postgres:12.8
+    # deploy:
+      # resources:
+        # limits:
+          # memory: 4G
+    # memswap_limit: 4G
+    container_name: postgresql
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=P@ssw0rd
+      - POSTGRES_DB=postgressss
+      - POSTGRES_HOST_AUTH_METHOD=trust
+      - TZ=Asia/Tehran
+    ports:
+      - 5432:5432
+    restart: unless-stopped
+    volumes:
+      - ./app-data/postgres:/var/lib/postgresql/data
+    healthcheck:
+      test: [ "CMD", "pg_isready", "-q", "-d","postgres", "-U", "postgres"  ]
+      interval: 2s
+      timeout: 60s
+      retries: 30
+    networks:
+      - app-tire
+
+
+
+
+
+================================================================
+
+       healthcheck:
+      test: [ "CMD", "pg_isready", "-q", "-d","postgres", "-U", "root"  ]
+
+================================================================
+        
+          healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres && psql -U postgres -d hadidb -c 'SELECT COUNT(*) FROM "users";' | grep -q '[1-9][0-9]*'"]
