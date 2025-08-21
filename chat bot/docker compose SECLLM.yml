@@ -1,0 +1,131 @@
+version: '3.8'
+
+services:
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ./chat-bot/ollama_data/models:/root/.ollama
+    restart: unless-stopped
+    tty: true
+    networks:
+      - app-tire
+    deploy:
+      resources:
+        limits:
+          memory: 8G
+        reservations:
+          memory: 4G
+
+  open-webui:
+    image: dyrnq/open-webui:latest
+    container_name: open-webui
+    depends_on:
+      - ollama
+    ports:
+      - "3000:8080"
+    volumes:
+      - ./chat-bot/openwebui_data:/app/backend/data
+    environment:
+      - OLLAMA_BASE_URL=http://ollama:11434
+      - WEBUI_SECRET_KEY=your_secure_secret_key_here
+    restart: unless-stopped
+    networks:
+      - app-tire
+
+  portainer:
+    image: portainer/portainer-ce:latest
+    container_name: portainer
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./chat-bot/portainer:/data
+    ports:
+      - 9000:9000
+    networks:
+      - app-tire
+
+volumes:
+  ollama_data:
+  openwebui_data:
+  portainer_data:
+
+networks:
+  app-tire:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/24
+
+
+
+ ============================================================================       
+
+# ایجاد شبکه داخلی جداگانه
+docker network create --internal isolated-network
+
+# محدود کردن دسترسی پورت‌ها
+iptables -A DOCKER-USER -p tcp --dport 11434 -j DROP
+iptables -A DOCKER-USER -p tcp --dport 11434 -s 192.168.1.0/24 -j ACCEPT
+
+
+===============================================================================
+
+# به روزرسانی سیستم
+sudo apt update && sudo apt upgrade -y
+
+# نصب Docker
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+
+# افزودن کاربر به گروه Docker
+sudo usermod -aG docker $USER
+
+# نصب Docker Compose
+sudo curl -L "https://github.com/docker/compose/releases/download/v2.24.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+
+
+===============================================================================
+
+# اتصال به کانتینر Ollama
+docker exec -it ollama ollama pull llama3.2
+
+# بررسی مدل‌های موجود
+docker exec -it ollama ollama list
+
+===============================================================================
+
+
+# افزودن به docker-compose.yml برای Ollama
+environment:
+  - OLLAMA_NUM_PARALLEL=4
+  - OLLAMA_MAX_LOADED_MODELS=2
+
+===============================================================================
+
+# اسکریپت پشتیبان‌گیری
+#!/bin/bash
+tar -czf ollama_backup_$(date +%Y%m%d).tar.gz ./chat-bot/ollama_data/
+docker exec open-webui tar -czf /app/backend/data/backup_$(date +%Y%m%d).tar.gz /app/backend/data/
+
+===============================================================================
+
+# مشاهده وضعیت کانتینرها
+docker-compose ps
+
+# مشاهده لاگ‌ها
+docker-compose logs ollama
+docker-compose logs open-webui
+
+# بررسی اتصال شبکه
+docker exec -it open-webui ping ollama
+
+===============================================================================
+
+
