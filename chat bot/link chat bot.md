@@ -33,3 +33,21 @@ docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-
 مرورگر را باز کنید و به آدرس
 ''http://localhost:3000''
 بروید
+
+
+======================================
+
+Fully local Manus AI!
+
+AgenticSeek is an autonomous agent that browses the web, writes code, and plans tasks, all on your device.
+
+It runs entirely on your hardware, ensuring complete privacy and zero cloud dependency.
+
+100% Open Source
+
+https://github.com/Fosowl/agenticSeek
+
+یک پروژه کاملاً محلی و متن‌باز است که امکاناتی مانند مرور وب خودکار، برنامه‌نویسی، برنامه‌ریزی وظایف و تعامل صوتی را فراهم می‌کند — همه بدون نیاز به سرویس‌های ابری یا پرداخت هزینه‌های اشتراک. اگر به حریم خصوصی علاقه‌مندید یا می‌خواهید کنترل کامل روی سیستم هوشمند خود داشته باشید، این پروژه گزینه‌ای فوق‌العاده است.
+
+
+=======================================
