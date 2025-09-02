@@ -51,3 +51,5 @@ t.me/programmers_street
 [simstudio](https://simstudio.ai)
 
 =======================================
+
+[ docs n8n ](https://docs.n8n.io/hosting/)
