@@ -1,5 +1,18 @@
 # n8n
 
+
+## install n8n:
+
+n8n is one of the most popular low-code platforms for building AI agents or workflows. But did you know the package is fully open source, and you can install it for free on your local pc? In this tutorial we install n8n in a Docker container. This will ensure a stable environment which is easy to update.
+
+👇Download Docker 👇
+🔗 https://www.docker.com/
+
+👇Get n8n Cloud Version 👇
+https://n8n.partnerlinks.io/n8n-local
+
+=====================================================================================
+
 ابزار n8n: دستیار رایگان و همه‌فن‌حریف شما برای خداحافظی با کارهای تکراری!
 
 تاحالا شده از انجام کارهای تکراری و کپی-پیست‌های بی‌وقفه خسته بشی؟ مثلاً هر بار که مشتری جدیدی فرم پر می‌کنه، مجبور باشی اطلاعاتش رو دستی وارد فایل اکسل کنی، بعد بهش ایمیل بزنی و به تیم فروش هم خبر بدی؟
