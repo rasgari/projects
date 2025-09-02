@@ -58,3 +58,7 @@ t.me/programmers_street
 ## Self-hosting n8n
 
 [ docs n8n ](https://docs.n8n.io/hosting/)
+
+## Docker Installation
+
+[ docker n8n ](https://docs.n8n.io/hosting/installation/docker/)
