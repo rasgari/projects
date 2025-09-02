@@ -11,8 +11,28 @@ n8n is one of the most popular low-code platforms for building AI agents or work
 👇Get n8n Cloud Version 👇
 https://n8n.partnerlinks.io/n8n-local
 
-port: "5680"
+port: "5678"
 =====================================================================================
+
+In this tutorial you'll learn how to install n8n on your local machine so you can use it for free.
+
+## preinstall
+```
+Nodejs: https://nodejs.org/en/download
+n8n Docs: https://docs.n8n.io/hosting/installat...
+```
+
+```
+node --version
+```
+
+## local machine n8n
+```
+npm install n8n -g
+```
+
+=====================================================================================
+
 
 ابزار n8n: دستیار رایگان و همه‌فن‌حریف شما برای خداحافظی با کارهای تکراری!
 
