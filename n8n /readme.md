@@ -62,3 +62,6 @@ t.me/programmers_street
 ## Docker Installation
 
 [ docker n8n ](https://docs.n8n.io/hosting/installation/docker/)
+
+## github n8n
+[ github n8n ](https://github.com/n8n-io/n8n-desktop-app)
