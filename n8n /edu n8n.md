@@ -18,3 +18,27 @@ http://localhost:5678
 username: admin
 
 password: admin (تغییرش بدید!)
+
+
+==========================================================
+
+# دامنه و ایمیل
+N8N_DOMAIN=n8n.example.com
+LETSENCRYPT_EMAIL=you@example.com
+TIMEZONE=Asia/Baku
+
+# کلیدهای حساس (قابل تولید با: openssl rand -hex 32)
+N8N_ENCRYPTION_KEY=change_me_to_a_random_64_hex
+
+# Postgres
+POSTGRES_USER=n8n
+POSTGRES_PASSWORD=strong_pg_password
+POSTGRES_DB=n8n
+
+# Redis
+REDIS_PASSWORD=strong_redis_password
+
+# Worker
+WORKER_CONCURRENCY=5
+
+==========================================================
