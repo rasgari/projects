@@ -10,7 +10,7 @@ services:
     environment:
       - N8N_BASIC_AUTH_ACTIVE=true
       - N8N_BASIC_AUTH_USER=admin        # یوزرنیم ورود
-      - N8N_BASIC_AUTH_PASSWORD=changeme # پسورد ورود
+      - N8N_BASIC_AUTH_PASSWORD=admin # پسورد ورود
       - N8N_HOST=n8n.local
       - N8N_PORT=5678
       - N8N_PROTOCOL=http
