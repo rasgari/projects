@@ -1,4 +1,4 @@
- # SonarQube چیه؟
+ # SonarQube 
 
 یک پلتفرم تحلیل کد منبع (Static Code Analysis) هست.
 
