@@ -15,9 +15,9 @@ Infrastructure as Code (IaC) مثل Terraform یا Helm
 نمونه استفاده:
 
 اگر توی پروژه Node.js هستی، با دستور:
-
+```
 snyk test
-
+```
 
 لیست پکیج‌های آسیب‌پذیر و نسخه امن رو می‌ده.
 
