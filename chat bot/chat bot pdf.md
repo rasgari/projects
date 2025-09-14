@@ -5,6 +5,8 @@
 ```
 docker pull dyrnq/open-webui:git-7a47ba1
 docker save -o openwebui-git.tar dyrnq/open-webui:git-7a47ba1
+docker load -i openwebui-git.tar
+
 ```
 
 
