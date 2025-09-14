@@ -2,11 +2,10 @@
 
 راه‌اندازی ساده چت‌بات PDF در داکر (مثال با Haystack)
 نصب Docker و Docker Compose
-
+```
 docker pull dyrnq/open-webui:git-7a47ba1
 docker save -o openwebui-git.tar dyrnq/open-webui:git-7a47ba1
-
-
+```
 
 
 اجرای سرویس:
