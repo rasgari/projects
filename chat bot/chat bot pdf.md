@@ -52,6 +52,9 @@ docker-compose up -d
 
 ==================================================================
 
+## error RAG / Ingest Documents
+
+
 ```
 OSError: We couldn't connect to 'https://huggingface.co' to load this file,
 couldn't find it in the cached files...
