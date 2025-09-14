@@ -8,7 +8,7 @@ docker save -o openwebui-git.tar dyrnq/open-webui:git-7a47ba1
 docker load -i openwebui-git.tar
 ```
 
-نسخه‌ ها:
+نسخه‌ ها به بالا باشه:
 ```
 OpenWebUI v0.6.5
 Ollama v0.5.1
