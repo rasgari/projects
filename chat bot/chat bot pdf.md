@@ -13,6 +13,7 @@ docker load -i openwebui-git.tar
 OpenWebUI v0.6.5
 Ollama v0.5.1
 ```
+با نسخه‌ی ۰.۷.۴ به بالا دکمه‌ی Ingest Documents فعال میشه → فایل‌های PDF و Word رو می‌خونه → توی جواب‌ها نشون میده.
  دکمه‌ی Ingest Documents (یا همون RAG / Docs) وجود داشته باشه
 پشتیبانی از Document Search / RAG تازه از نسخه‌های 0.7.x به بعد توی OpenWebUI اضافه شد.
 
