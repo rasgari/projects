@@ -3,18 +3,11 @@
 راه‌اندازی ساده چت‌بات PDF در داکر (مثال با Haystack)
 نصب Docker و Docker Compose
 
-استفاده از فایل docker-compose.yml نمونه Haystack:
+docker pull dyrnq/open-webui:git-7a47ba1
+docker save -o openwebui-git.tar dyrnq/open-webui:git-7a47ba1
 
-```bash
-version: '3.7'
-services:
-  rest_api:
-    image: deepset/haystack:latest
-    ports:
-      - "8000:8000"
-    volumes:
-      - ./pdfs:/app/pdfs
-```
+
+
 
 اجرای سرویس:
 
