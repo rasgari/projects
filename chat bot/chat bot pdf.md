@@ -47,3 +47,69 @@ docker-compose up -d
 کل سیستم را می‌توان در داکر کانتینر کرد تا به راحتی اجرا و مدیریت شود.
 
 اگر دنبال راه‌حل آماده هستید، سرویس‌های آنلاین مثل ChatPDF هم وجود دارند اما آفلاین و داکری نیستند.
+
+
+
+==================================================================
+
+```
+OSError: We couldn't connect to 'https://huggingface.co' to load this file,
+couldn't find it in the cached files...
+sentence-transformers/all-MiniLM-L6-v2
+```
+
+عنی:
+وقتی OpenWebUI می‌خواد ماژول RAG / Ingest Documents رو فعال کنه، نیاز داره یک مدل embedding (مثل all-MiniLM-L6-v2) از HuggingFace بگیره.
+ولی سرورت آفلاینه و نمی‌تونه به اینترنت وصل بشه → بنابراین کرش می‌کنه و دکمه Ingest Documents هم عملاً کار نمی‌کنه.
+
+✅ راه حل‌ها
+1. بهترین نسخه پایدار با RAG
+
+از OpenWebUI ≥ 0.7.2 به بالا استفاده کن (۰.۷.۴ یا ۰.۸.۰ خوبه).
+این نسخه‌ها RAG رو کامل دارن و تست شدن.
+نسخه‌های ۰.۶.۵ یا بیلدهای غیررسمی مثل dyrnq/open-webui مشکل‌دارن.
+
+2. رفع خطای بدون اینترنت
+
+چون آفلاین هستی باید embedding model رو دستی بیاری:
+
+روی یک سیستم وصل به اینترنت این دستور رو بزن:
+```
+git lfs install
+git clone https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
+```
+
+یا:
+```
+wget https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json
+wget https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/pytorch_model.bin
+wget https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer.json
+```
+
+پوشه‌ی دانلودشده رو بذار داخل مسیر:
+```
+./openwebui/embeddings/all-MiniLM-L6-v2
+```
+
+به OpenWebUI بگو از همین لوکال لود کن:
+توی docker-compose.yml اضافه کن:
+```
+volumes:
+  - ./openwebui:/app/backend/data
+  - ./openwebui/embeddings:/root/.cache/huggingface/transformers
+```
+3. ری‌استارت
+```
+docker compose down
+docker compose up -d
+```
+
+بعد از بالا اومدن، دکمه‌ی Ingest Documents در تنظیمات ظاهر میشه و می‌تونی PDF / Word بدی.
+
+🔹 پس:
+
+نسخه پیشنهادی: ghcr.io/open-webui/open-webui:0.7.4 یا بالاتر.
+
+خطا: به خاطر نبودن مدل embedding روی سیستم آفلاین.
+
+راهکار: مدل all-MiniLM-L6-v2 رو دستی دانلود و mount کن.
