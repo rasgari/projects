@@ -6,8 +6,15 @@
 docker pull dyrnq/open-webui:git-7a47ba1
 docker save -o openwebui-git.tar dyrnq/open-webui:git-7a47ba1
 docker load -i openwebui-git.tar
-
 ```
+
+نسخه‌ای که گفتی:
+```
+OpenWebUI v0.6.5
+Ollama v0.5.1
+```
+ دکمه‌ی Ingest Documents (یا همون RAG / Docs) وجود داشته باشه
+پشتیبانی از Document Search / RAG تازه از نسخه‌های 0.7.x به بعد توی OpenWebUI اضافه شد.
 
 
 اجرای سرویس:
