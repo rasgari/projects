@@ -32,17 +32,18 @@
 
 
 ## ravro:
+- https://tapsi.ir/
 - https://tapsi.ir/landings/bug-bounty
 - https://myket.ir
+- https://arvancloud.ir
 - https://www.arvancloud.ir/fa/landing/bug-bounty
-- https://basalam.com
 - https://irancell.ir
 - https://www.namava.ir
-- https://arvancloud.ir
+
 
 
 ## bugdasht:
 - https://my.bugdasht.ir/
 - https://tapsi.ir/landings/bug-bounty
 - https://irancell.ir
-
+- https://www.digikala.com/
