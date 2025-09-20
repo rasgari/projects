@@ -39,7 +39,8 @@
 - https://www.arvancloud.ir/fa/landing/bug-bounty
 - https://irancell.ir
 - https://www.namava.ir
-
+- https://nikpardakht.com/
+- https://flightio.com/
 
 
 ## bugdasht:
