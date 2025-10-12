@@ -22,7 +22,7 @@
 - https://www.digikala.com/page/bug-report/
 
 
-=======================================================================
+---
 
 - https://www.zarinpal.com/landing/bug-bounty/
 - https://bit24.cash/bugbounty/
@@ -48,3 +48,14 @@
 - https://tapsi.ir/landings/bug-bounty
 - https://irancell.ir
 - https://www.digikala.com/
+
+---
+
+## English
+
+- http://www.myfitnesspal.com
+- https://lumedeodorant.com/
+- https://help.lumedeodorant.com/
+- https://shopflamingo.com/
+- http://harrys.com/
+- https://free.timeanddate.com/
