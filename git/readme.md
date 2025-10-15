@@ -1,3 +1,3 @@
 # github
 
-[ git- wrapped ](git-wrapped.com)
+[ git-wrapped ](https://git-wrapped.com)
