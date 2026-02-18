@@ -1,3 +1,24 @@
+## ravro:
+- https://irancell.ir
+- https://nikpardakht.com/
+- https://www.namava.ir
+- https://arvancloud.ir
+- https://www.arvancloud.ir/fa/landing/bug-bounty
+- https://basalam.com
+
+
+- https://tapsi.ir/landings/bug-bounty
+
+
+## bugdasht:
+- https://my.bugdasht.ir/
+- https://irancell.ir
+- https://www.digikala.com/
+- https://tapsi.ir/landings/bug-bounty
+
+---
+
+
 # target irani:
 
 - https://ompfinex.com/bug-bounty
@@ -28,26 +49,6 @@
 - https://bit24.cash/bugbounty/
 
 
-
-
-
-## ravro:
-- https://irancell.ir
-- https://nikpardakht.com/
-- https://www.namava.ir
-- https://arvancloud.ir
-- https://www.arvancloud.ir/fa/landing/bug-bounty
-- https://basalam.com
-
-
-- https://tapsi.ir/landings/bug-bounty
-
-
-## bugdasht:
-- https://my.bugdasht.ir/
-- https://irancell.ir
-- https://www.digikala.com/
-- https://tapsi.ir/landings/bug-bounty
 
 
 ---
